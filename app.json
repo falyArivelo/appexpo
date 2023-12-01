@@ -22,10 +22,14 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-       
       },
       "googleServicesFile": "./google-services.json",
-      "package":"com.tubeguruji.findplace"
+      "package": "com.tubeguruji.findplace",
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.FOREGROUND_SERVICE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -37,6 +41,11 @@
           "locationAlwaysAndWhenInUsePermission": "Allow Explore Place to use your location."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "3129ec9d-1d3c-415b-9744-9bc6c9b969bb"
+      }
+    }
   }
 }
